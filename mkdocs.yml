@@ -3,8 +3,6 @@ site_description: 'Όλα τα resources που χρειάζεστε για τη
 docs_dir: docs/
 repo_name: 'cfalas/coi-guide'
 repo_url: 'https://github.com/cfalas/coi-guide'
-nav:
-  - Home: index.md
 theme:
   name: 'material'
 plugins:
