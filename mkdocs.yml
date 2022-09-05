@@ -4,11 +4,11 @@ docs_dir: docs/
 repo_name: 'cfalas/coi-guide'
 repo_url: 'https://github.com/cfalas/coi-guide'
 nav:
-    - Home: index.md
+  - Home: index.md
 theme:
   name: 'material'
 plugins:
-  search
+  - search
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
