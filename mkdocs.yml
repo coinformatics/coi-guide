@@ -1,8 +1,8 @@
 site_name: COI-Guide
 site_description: 'Όλα τα resources που χρειάζεστε για την Ολυμπιάδα Πληροφορικής'
 docs_dir: docs/
-repo_name: 'cfalas/coi-guide'
-repo_url: 'https://github.com/cfalas/coi-guide'
+repo_name: 'coinformatics/coi-guide'
+repo_url: 'https://github.com/coinformatics/coi-guide'
 theme:
   name: 'material'
 plugins:
