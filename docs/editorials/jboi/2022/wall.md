@@ -5,6 +5,6 @@
 
 ## Solutions
 ### Subtask 1
-$ 1 \le N \le 500 $ and $1 \le S \le 1000$
+$1 \le N \le 500$ and $1 \le S \le 1000$
 
 $$\sum_{i=0}^{n} a_i = X $$
