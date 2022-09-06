@@ -10,6 +10,10 @@ plugins:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
 
 extra_javascript:
   - javascripts/mathjax.js
