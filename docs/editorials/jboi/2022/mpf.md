@@ -1,5 +1,8 @@
 # Maximum Prime Factor
 ## Problem
+
+[Source](https://jboi2022.lrmd.ro/document/day1/mpf.pdf)
+
 Θέλουμε να πάμε από τον αριθμό $Χ$ στον αριθμό $Y$ κάνοντας ένα από τα ακόλουθα operations:
 
 Έστω $p$ ο μεγαλύτερος πρώτος διαιρέτης του $Χ$.
