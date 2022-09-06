@@ -5,11 +5,16 @@ repo_name: 'coinformatics/coi-guide'
 repo_url: 'https://github.com/coinformatics/coi-guide'
 theme:
   name: 'material'
+  features:
+    - content.tooltips
+
 plugins:
   - search
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - abbr
+  - attr_list
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
