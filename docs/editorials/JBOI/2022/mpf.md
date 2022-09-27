@@ -1,3 +1,8 @@
+---
+tags:
+  - Dynamic Programming
+  - Mathematics
+---
 # Maximum Prime Factor
 ## Problem
 

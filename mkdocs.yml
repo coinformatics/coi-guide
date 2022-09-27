@@ -4,6 +4,10 @@ docs_dir: docs/
 repo_name: 'coinformatics/coi-guide'
 repo_url: 'https://github.com/coinformatics/coi-guide'
 edit_uri: blob/main/docs/
+plugins:
+  - search
+  - social
+  - tags
 theme:
   name: 'material'
   features:
@@ -17,12 +21,19 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+  icon:
+    tag:
+      seg: material/family-tree
+      dp: material/chart-tree
+      interactive: material/swap-horizontal
+      maths: material/calculator
+extra:
+  tags:
+    Segment Trees: seg
+    Dynamic Programming: dp
+    Interactive Problems: interactive
+    Mathematics: maths
 
-
-
-plugins:
-  - search
-  - social
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true

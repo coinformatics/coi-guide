@@ -1,3 +1,7 @@
+---
+tags:
+  - Segment Trees
+---
 # Wall
 ## Problem
 [Source](https://jboi2022.lrmd.ro/document/day2/wall.pdf)
