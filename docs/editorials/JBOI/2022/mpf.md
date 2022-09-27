@@ -4,6 +4,9 @@ tags:
   - Mathematics
 ---
 # Maximum Prime Factor
+<span class="author">
+Author: Theo830
+</span>
 ## Problem
 
 [Source](https://jboi2022.lrmd.ro/document/day1/mpf.pdf)

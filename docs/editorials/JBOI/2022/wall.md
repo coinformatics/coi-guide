@@ -3,6 +3,10 @@ tags:
   - Segment Trees
 ---
 # Wall
+<span class="author">
+Author: cfalas
+</span>
+
 ## Problem
 [Source](https://jboi2022.lrmd.ro/document/day2/wall.pdf)
 
@@ -124,5 +128,7 @@ cout<<ans.first<<" "<<ans.second.second<<endl;
 Στο κάθε iteration του binary search, βρίσκουμε το πόσες πέτρες θα χρειαστούμε για να καλύψουμε το συγκεκριμένο εύρος, κάνοντας query το segment tree. Αν χρειαζόμαστε λιγότερες από $S$ πέτρες, θα δοκιμάσουμε μεγαλύτερες τιμές για το $r$, ενώ αν χρειαζόμαστε περισσότερες, θα δοκιμάσουμε μικρότερες τιμές.
 
 Η συνολική χρονική πολυπλοκότητα είναι $O(N\log^2N)$
-### Subtask 4 (100 pts)
+### Subtask 4 (100 points)
 Η ίδια ιδέα με την λύση του 3ου subtask, αλλά χρησιμοποιώντας την τεχνική descending the tree, έτσι ώστε η πολυπλοκότητα να γίνει $O(N\log N)$.
+
+Author: cfalas
