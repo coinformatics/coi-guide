@@ -22,6 +22,7 @@ theme:
 
 plugins:
   - search
+  - social
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
