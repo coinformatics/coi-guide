@@ -18,5 +18,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base libffi-dev zlib-dev libjpeg-turbo-dev libpangocairo-1.0-0 libcairo2-dev libgirepository1.0-dev
+          EXTRA_PACKAGES: build-base libffi-dev zlib-dev libjpeg-turbo-dev libcairo2-dev
           REQUIREMENTS: requirements.txt
