@@ -3,3 +3,5 @@
 *[CHT]: Convex Hull Trick
 *[DP]: Dynamic Programming
 *[PBDS]: Policy Based Data Structures
+*[CF]: Codeforces
+*[CC]: Codechef
