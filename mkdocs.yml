@@ -28,12 +28,16 @@ theme:
       dp: material/chart-tree
       interactive: material/swap-horizontal
       maths: material/calculator
+      graphs: fontawesome/solid/circle-nodes
+      sqrt: material/square-root
 extra:
   tags:
     Segment Trees: seg
     Dynamic Programming: dp
     Interactive Problems: interactive
     Mathematics: maths
+    Graphs: graphs
+    SQRT Decomposition: sqrt
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -46,10 +50,13 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
-
 
 
 
