@@ -30,6 +30,7 @@ theme:
       maths: material/calculator
       graphs: fontawesome/solid/circle-nodes
       sqrt: material/square-root
+      geometry: material/shape-outline
 extra:
   tags:
     Segment Trees: seg
@@ -38,6 +39,7 @@ extra:
     Mathematics: maths
     Graphs: graphs
     SQRT Decomposition: sqrt
+    Geometry: geometry
 
 markdown_extensions:
   - pymdownx.arithmatex:
