@@ -6,7 +6,7 @@ title: Juniors
 ## Παρουσιάσεις
 
 - [Day 1 - Data types](Day_1.pdf)
-- [Day 2 - Time Complexity, Sorting](Day_1.pdf)
+- [Day 2 - Time Complexity, Sorting](Day_2.pdf)
 - [Day 3 - STL Containers](3_19.7.23.pdf)
 - [Day 5 - Brute Force & Binary Search](Brute Force & Binary Search.pdf)
 
