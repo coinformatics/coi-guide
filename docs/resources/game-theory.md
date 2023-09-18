@@ -44,6 +44,7 @@ $$S(x) = mex\{S(y_1) \oplus S(y_2) \oplus \ldots \oplus S(y_k)\}$$
 ## Resources
 
 - <https://cp-algorithms.com/game_theory/sprague-grundy-nim.html>
+- <https://www.youtube.com/watch?v=JT8ZuJey3s0&t=154s&ab_channel=JAlgs>
 
 ## Problems
 
