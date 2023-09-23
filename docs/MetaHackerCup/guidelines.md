@@ -13,7 +13,7 @@
 
 1) Πατάμε το κουμπί "Validate Solution and Submit" που βρίσκεται στο κάτω μέρος της σελίδας του προβλήματος.
 
-![validate\_solution\_\&\_submit\_button](./../../images/validatesolutionandsubmit.png)
+<img src="../../images/validatesolutionandsubmit.png" alt="Validate solution & submit button">
 
 2) Πατάμε το κουμπί "Download Validation Input".
 
