@@ -1,11 +1,19 @@
 # Meta Hacker Cup γενικές οδηγίες
 
+- [Υποβολές](#submit)
+- [Πώς αλλάζω κατάλογο για τα Downloads](#downloads)
+- [Γενικα tips](#tips)
+
+## Submit
 ## Πως γίνονται οι υποβολές:
+<!-- Introduction -->
 Σε αυτό το διαγωνισμό τρέχουμε τοπικά τον κώδικα μας. Δηλαδή δεν τον αναιβάζουμε σε OJ (online-judge) όπου και θα μεταγλωτιζόταν και θα έτρεχε στα ανάλογα test cases.
 
 Άρα όταν θέλουμε να υποβάλουμε την λύση μας για ένα πρόβλημα:
 
-1) Πατάμε το κουμπί "Validate Solution and Submit" που βρίσκεται στο κάτω μέρος της σελίδας του προβλήματος. ![validate\_solution\_\&\_submit\_button](./../../images/validatesolutionandsubmit.png)
+1) Πατάμε το κουμπί "Validate Solution and Submit" που βρίσκεται στο κάτω μέρος της σελίδας του προβλήματος.
+
+![validate\_solution\_\&\_submit\_button](./../../images/validatesolutionandsubmit.png)
 
 2) Πατάμε το κουμπί "Download Validation Input".
 
@@ -16,16 +24,16 @@
 
 ```BASH
 g++ my_solution.cpp -o run.out
-./run.out < '\<όνομα\_προβλήματος\>validation\_input.txt' > validation_output.txt
+./run.out < '<όνομα_προβλήματος>validation_input.txt' > validation_output.txt
 ```
 
 4) Μετά αναιβάζουμε το αρχείο εξόδου (στο παράδειγμα πιο πάνω 'validation\_output.txt')
 
 ![upload\_validation\_output.txt](./../../images/upload_validation_output.png)
 
-και πατούμε "Validate"
+και πατούμε "Validate".
 
-![validate](./../../images/validate.png).
+![validate](./../../images/validate.png)
 
 5) Εαν η έξοδος που έδωσε η λύση μας δεν είναι σωστή τότε θα μας δείξει "Wrong Answer" το παράθυρο που σημαίνει ότι χάνουμε κάποιο(α) απο τα test cases της πρώτης ομάδας και πρέπει να βρούμε ποιες περιπτώσεις χάνει η λύση μας. Διαφορετικά θα μας δείξει "Solution Validated".
 
@@ -53,18 +61,20 @@ g++ my_solution.cpp -o run.out
 
 9) Τώρα αφού έχουμε το αρχείο εξόδου και το αρχείο του κώδικα μας πάμε και τα αναιβάζουμε στο παράθυρο που άνοιξε το σύστημα του διαγωνισμού και πατάμε "submit". Προσοχή στο ότι μέσα στα 6 λεπτά που δίνονται μπορούμε να κάνουμε "submit" πολλές φορές αλλά μόνο η τελευταί φορά θα μετρήσει. Με το πέρας το 6 λεπτών δεν θα μπορούμε να ξανακάνουμε υποβολή για το πρόβλημα. Αν δεν υποβάλουμε κάτι μέσα στα 6 λεπτά και πάλι θα κλειδώσει το πρόβλημα και δεν θα μπορούμε να υποβάλουμε κάτι.
 
+## Downloads
 ## Πώς αλάζω τον φάκελο/κατάλογο 'Downloads' στο browswer μου:
 
 ### Chrome
 Πατούμε το κουμπί με τις 3 τελείες πάνω-δεξιά ![chrome\_settings](./../../images/chrome_settings.png) -> Settings -> Downloads. Μετά επιλέγουμε ΠΟΥ θέλουμε να κατεβαίνουν τα αρχεία, ούτως ώστε να ευκοληνθούμε κατά την ώρα του διαγωνισμού.
 
-![chrome\_set\_download](./../../images/select_download_folder.png).
+![chrome\_set\_download](./../../images/select_download_folder.png)
 
 ### Firefox
 3 παύλες πάνω-δεξιά -> Files & Applications:
 
-![firefox\_download](./../../images/firefox_download.png).
+![firefox\_download](./../../images/firefox_download.png)
 
+## Tips
 ## Γενικά tips/tactics:
 1) Αν πίασουμε WA στην πρώτη ομάδα απο ελέγχους τότε εννοείτε ότι μπορούμε να πάμε να δούμε ποιες περιπτώσεις χάνουμε ανοίγωντας το αρχείο εισόδου αντί να κάτσουμε να δημιουργήσουμε tests απο το μηδέν. Συνήθως (όχι πάντα) η πρώτη ομάδα ελέγχων περιέχει και test cases μικρού μεγέθους ώστε να μπορούμε να παρατηρήσουμε εύκολα λάθη.
 2) Για την πρώτη ομάδα ελέγχων δεν δίνεται timer. Άρα μπορούμε να κατεβάσουμε το αρχείο με τους ελέγχους και να βάλουμε μια brute force λύση να παράξει τις λύσεις (μέχρι κάποιο σημείο) ούτως ώστε να βρούμε ποιο εύκολα που έχουμε λάθος αφού θα ξέρουμε το σωστό αποτέλεσμα.
