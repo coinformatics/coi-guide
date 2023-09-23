@@ -30,7 +30,7 @@ Author: MavrosOplarxigos
 
     ![upload_validation_output.txt](images/upload_validation_output.png)
 
-    ![validate](images/images/validate.png)
+    ![validate](images/validate.png)
 
 5. Εαν η έξοδος που έδωσε η λύση μας δεν είναι σωστή τότε θα μας δείξει "Wrong Answer" το παράθυρο που σημαίνει ότι χάνουμε κάποιο(α) απο τα test cases της πρώτης ομάδας και πρέπει να βρούμε ποιες περιπτώσεις χάνει η λύση μας. Διαφορετικά θα μας δείξει "Solution Validated".
 
