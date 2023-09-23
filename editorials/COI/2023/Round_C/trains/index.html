@@ -1,0 +1,1314 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Όλα τα resources που χρειάζεστε για την Ολυμπιάδα Πληροφορικής">
+      
+      
+      
+        <link rel="canonical" href="https://coinformatics.github.io/coi-guide/editorials/COI/2023/Round_C/trains/">
+      
+      
+        <link rel="prev" href="../quantum/">
+      
+      
+        <link rel="next" href="../../../../JBOI/2022/mpf/">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Trains - COI-Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+  
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+  
+  <style>.md-tag-icon--seg{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 11 5.79V7H7a2 2 0 0 0-2 2v.71A2.5 2.5 0 0 0 3.5 12 2.5 2.5 0 0 0 5 14.29V15H4a2 2 0 0 0-2 2v1.21A2.5 2.5 0 0 0 .5 20.5 2.5 2.5 0 0 0 3 23a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 4 18.21V17h4v1.21a2.5 2.5 0 0 0-1.5 2.29A2.5 2.5 0 0 0 9 23a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-1.5-2.29V17a2 2 0 0 0-2-2H7v-.71A2.5 2.5 0 0 0 8.5 12 2.5 2.5 0 0 0 7 9.71V9h10v.71A2.5 2.5 0 0 0 15.5 12a2.5 2.5 0 0 0 1.5 2.29V15h-1a2 2 0 0 0-2 2v1.21a2.5 2.5 0 0 0-1.5 2.29A2.5 2.5 0 0 0 15 23a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-1.5-2.29V17h4v1.21a2.5 2.5 0 0 0-1.5 2.29A2.5 2.5 0 0 0 21 23a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-1.5-2.29V17a2 2 0 0 0-2-2h-1v-.71A2.5 2.5 0 0 0 20.5 12 2.5 2.5 0 0 0 19 9.71V9a2 2 0 0 0-2-2h-4V5.79a2.5 2.5 0 0 0 1.5-2.29A2.5 2.5 0 0 0 12 1m0 1.5a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M6 11a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m12 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M3 19.5a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m6 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m6 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m6 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1Z"/></svg>');}.md-tag-icon--dp{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 6h8v16h-8V6M2 4h20V2H2v2m0 4h10V6H2v2m7 14h3V10H9v12m-7 0h5V10H2v12Z"/></svg>');}.md-tag-icon--interactive{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7v-3Z"/></svg>');}.md-tag-icon--maths{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4H7m0 6v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2Z"/></svg>');}.md-tag-icon--graphs{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M418.4 157.9c35.3-8.3 61.6-40 61.6-77.9 0-44.2-35.8-80-80-80-43.4 0-78.7 34.5-80 77.5l-183.8 73.6C121.7 136.8 101.9 128 80 128c-44.2 0-80 35.8-80 80s35.8 80 80 80c12.2 0 23.8-2.7 34.1-7.6l145.6 127.4c-2.4 7.6-3.7 15.8-3.7 24.2 0 44.2 35.8 80 80 80s80-35.8 80-80c0-27.7-14-52.1-35.4-66.4l37.8-207.7zm-262.1 74.3c2.2-6.9 3.5-14.2 3.7-21.7L343.8 137c3.6 3.5 7.4 6.7 11.6 9.5l-37.8 207.6c-5.5 1.3-10.8 3.1-15.8 5.5L156.3 232.2z"/></svg>');}.md-tag-icon--sqrt{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.76 16.83 14.59 14l-2.83-2.83 1.41-1.41L16 12.59l2.83-2.83 1.41 1.41L17.41 14l2.83 2.83-1.41 1.41L16 15.41l-2.83 2.83-1.41-1.41M2 11h3l2.29 5.4L10 6h12v2H11.55L8.68 19H6.22l-2.54-6H2v-2Z"/></svg>');}.md-tag-icon--geometry{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 13.5v8H3v-8h8m-2 2H5v4h4v-4M12 2l5.5 9h-11L12 2m0 3.86L10.08 9h3.84L12 5.86M17.5 13c2.5 0 4.5 2 4.5 4.5S20 22 17.5 22 13 20 13 17.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg>');}</style>
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Trains - COI-Guide" >
+      
+        <meta  property="og:description"  content="Όλα τα resources που χρειάζεστε για την Ολυμπιάδα Πληροφορικής" >
+      
+        <meta  property="og:image"  content="https://coinformatics.github.io/coi-guide/assets/images/social/editorials/COI/2023/Round_C/trains.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://coinformatics.github.io/coi-guide/editorials/COI/2023/Round_C/trains/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Trains - COI-Guide" >
+      
+        <meta  name="twitter:description"  content="Όλα τα resources που χρειάζεστε για την Ολυμπιάδα Πληροφορικής" >
+      
+        <meta  name="twitter:image"  content="https://coinformatics.github.io/coi-guide/assets/images/social/editorials/COI/2023/Round_C/trains.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trains" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="COI-Guide" class="md-header__button md-logo" aria-label="COI-Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            COI-Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trains
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/coinformatics/coi-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    coinformatics/coi-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="COI-Guide" class="md-nav__button md-logo" aria-label="COI-Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    COI-Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/coinformatics/coi-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    coinformatics/coi-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        COI-Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Camps
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Camps" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Camps
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="false">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2023" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1_1" type="checkbox" id="__nav_2_1_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_1" tabindex="0" aria-expanded="false">
+          July
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="July" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          July
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../camps/2023/July/" class="md-nav__link">
+        Juniors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
+          Editorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Editorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Editorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="true">
+          COI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="COI" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          COI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1_1" type="checkbox" id="__nav_3_1_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_1" tabindex="0" aria-expanded="true">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2023" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1_1_1" type="checkbox" id="__nav_3_1_1_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_1_1" tabindex="0" aria-expanded="true">
+          Round C
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Round C" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_1_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Round C
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../battleship/" class="md-nav__link">
+        Battleship
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantum/" class="md-nav__link">
+        Quantum Computer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Trains
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Trains
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subtask-1-15-points" class="md-nav__link">
+    Subtask 1 (15 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-2-18-points" class="md-nav__link">
+    Subtask 2 (18 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-3-27-points" class="md-nav__link">
+    Subtask 3 (27 points)
+  </a>
+  
+    <nav class="md-nav" aria-label="Subtask 3 (27 points)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-1" class="md-nav__link">
+    Solution 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-2" class="md-nav__link">
+    Solution 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-4-24-points" class="md-nav__link">
+    Subtask 4 (24 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-5-16-points" class="md-nav__link">
+    Subtask 5 (16 points)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          JBOI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JBOI" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          JBOI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2_1" type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" tabindex="0" aria-expanded="false">
+          2022
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2022" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          2022
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../JBOI/2022/mpf/" class="md-nav__link">
+        Maximum Prime Factor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../JBOI/2022/wall/" class="md-nav__link">
+        Wall
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Organisation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Organisation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Organisation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../organisation/translation/" class="md-nav__link">
+        Μετάφραση
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../resources/game-theory/" class="md-nav__link">
+        Game Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" tabindex="0" aria-expanded="false">
+          Strings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Strings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Strings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../resources/strings/trie/" class="md-nav__link">
+        Trie
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subtask-1-15-points" class="md-nav__link">
+    Subtask 1 (15 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-2-18-points" class="md-nav__link">
+    Subtask 2 (18 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-3-27-points" class="md-nav__link">
+    Subtask 3 (27 points)
+  </a>
+  
+    <nav class="md-nav" aria-label="Subtask 3 (27 points)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-1" class="md-nav__link">
+    Solution 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-2" class="md-nav__link">
+    Solution 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-4-24-points" class="md-nav__link">
+    Subtask 4 (24 points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtask-5-16-points" class="md-nav__link">
+    Subtask 5 (16 points)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+        
+        
+          
+        
+      
+      
+        <span class="md-tag md-tag-icon md-tag-icon--seg">Segment Trees</span>
+      
+    
+      
+        
+        
+          
+        
+      
+      
+        <span class="md-tag md-tag-icon md-tag-icon--graphs">Graphs</span>
+      
+    
+      
+        
+        
+          
+        
+      
+      
+        <span class="md-tag md-tag-icon md-tag-icon--sqrt">SQRT Decomposition</span>
+      
+    
+  </nav>
+
+
+
+  
+  
+
+
+
+<h1 id="trains">Trains</h1>
+<p><span class="author">
+Author: cfalas
+</span></p>
+<h2 id="problem">Problem</h2>
+<p><a href="http://81.4.170.42:8980/training/#/task/trains/statement">Source</a></p>
+<p>Το πρόβλημα μας δίνει ένα γράφο, στον οποίο πρέπει να βρούμε το shortest path από τον κόμβο <span class="arithmatex">\(1\)</span> στον κόμβο <span class="arithmatex">\(N\)</span>.</p>
+<p>Το δύσκολο κομμάτι, όμως είναι το ότι ο γράφος δεν έχει απλές ακμές από τον κόμβο <span class="arithmatex">\(u\)</span> στον κόμβο <span class="arithmatex">\(v\)</span> όπως σε "κανονικούς" γράφους. Αντί αυτού, o κάθε κόμβος στο εύρος <span class="arithmatex">\([Ls_i, Rs_i]\)</span> είναι ενωμένος με κάθε κόμβο στο εύρος <span class="arithmatex">\([Lf_i, Rf_i]\)</span>.</p>
+<h2 id="solution">Solution</h2>
+<h3 id="subtask-1-15-points">Subtask 1 (15 points)</h3>
+<ul>
+<li><span class="arithmatex">\(Ls_i=Rs_i\)</span>, <span class="arithmatex">\(Lf_i=Rf_i\)</span></li>
+<li><span class="arithmatex">\(1 \leq N, M \leq 10000\)</span></li>
+</ul>
+<p>Αφού <span class="arithmatex">\(Ls_i=Rs_i\)</span> και <span class="arithmatex">\(Lf_i=Rf_i\)</span>, η κάθε γραμμή του τραίνου πάει από ένα σταθμό σε έναν άλλο. Δηλαδή, το σιδηροδρομικό σύστημα μπορεί να αντιπροσωπευθεί από έναν γράφο, όπου ο κάθε σταθμός είναι ένας κόμβος, και η κάθε γραμμή είναι μια ακμή στον γράφο.</p>
+<p>Αφού δημιουργήσουμε τον γράφο, μπορούμε να βρούμε το συντομότερο μονοπάτι χρησιμοποιώντας τον αλγόριθμο του Dijkstra, με συνολική χρονική πολυπλοκότητα <span class="arithmatex">\(O(N+M\log N)\)</span></p>
+<h3 id="subtask-2-18-points">Subtask 2 (18 points)</h3>
+<ul>
+<li><span class="arithmatex">\(1 \leq N, M \leq 500\)</span></li>
+</ul>
+<p>Στο δεύτερο subtask, δεν έχουμε τον ίδιο περιορισμό που μας επέτρεψε στο πρώτο subtask να χρησιμοποιήσουμε ο σιδηροδρομικό δίκτυο ως γράφο.</p>
+<p>Σε αυτό το subtask, το <span class="arithmatex">\(N\)</span> και το <span class="arithmatex">\(M\)</span> είναι αρκετά μικρά όμως, το οποίο μας επιτρέπει να δημιουργήσουμε ένα γράφο που να μπορεί να χρησιμοποιηθεί με τον ίδιο τρόπο όμως. Η εκφώνηση μας περιγράφει πως η κάθε γραμμή ενώνει όλους τους κόμβους στο εύρος <span class="arithmatex">\([Ls_i, Rs_i]\)</span>, με όλους τους κόμβους στο εύρος <span class="arithmatex">\([Lf_i, Rf_i]\)</span>. </p>
+<p>Δηλαδή, ο κόμβος <span class="arithmatex">\(Ls_i\)</span> είναι ενωμένος με όλους τους κόμβους <span class="arithmatex">\({Lf_i, Lf_i+1, Lf_i+2, \ldots, Rf_i-1, Rf_i}\)</span>. Παρομοίως, ο κόμβος <span class="arithmatex">\(Ls_i+1\)</span> είναι ενωμένος (με διαφορετικό βάρος) στους κόμβους <span class="arithmatex">\({Lf_i, Lf_i+1, Lf_i+2, \ldots, Rf_i-1, Rf_i}\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Παράδειγμα</p>
+<p>Για παράδειγμα, για την γραμμή <code>1 3 7 9 8</code> που εμφανίζεται στο παράδειγμα στην εκφώνηση, θα προσθέσουμε τις ακόλουθες ακμές:
+<pre class="mermaid"><code>graph LR
+    g1[1 2 3] --&gt;|8| g2[7 8 9]
+</code></pre></p>
+<pre class="mermaid"><code>
+graph TD
+    1 --&gt;|10| 7
+    1 --&gt;|11| 8
+    1 --&gt;|12| 9
+    2 --&gt;|9| 7
+    2 --&gt;|10| 8
+    2 --&gt;|11| 9
+    3 --&gt;|8| 7
+    3 --&gt;|9| 8
+    3 --&gt;|10| 9</code></pre>
+</div>
+<p>Μπορούμε να δημιουργήσουμε ξεχωριστά την κάθε ακμή στον γράφο μας για κάθε γραμμή στον σιδηροδρομικό σταθμό. Στην χειρότερη περίπτωση, θα υπάρχουν <span class="arithmatex">\(\frac{N}{2} \cdot \frac{N}{2}\)</span> ακμές για κάθε γραμμή, δηλαδή θα έχουμε συνολικά <span class="arithmatex">\(Ο(MN^2)\)</span> ακμές, και έτσι η συνολική πολυπλοκότητα μας θα είναι <span class="arithmatex">\(O(NM^2\log N)\)</span>.</p>
+<h3 id="subtask-3-27-points">Subtask 3 (27 points)</h3>
+<p>Για το 3ο subtask, υπάρχουν 2 ξεχωριστές λύσεις. Θα χρειαστούμε κομμάτι και από τις 2 για το επόμενο subtask.</p>
+<h4 id="solution-1">Solution 1</h4>
+<p>Το πρόβλημα με την προηγούμενη μας λύση είναι ότι είναι αργή, λόγω του ότι έχει πολλές ακμές. Θα ήταν καλό, αν μπορούσαμε μα κάποιο τρόπο να "ανταλλάξουμε" κάποιες ακμές για κόμβους, αφού ο αριθμός τον κόμβων έχουν μόνο λογαριθμικό κόστος στην πολυπλοκότητα μας.</p>
+<p>Για να το κάνουμε αυτό, μπορούμε να "μαζέψουμε" όλες τις outgoing ακμές, και να τις ενώσουμε μαζικά στις incoming ακμές. Δηλαδή, για κάθε ακμή θα δημιουργήσουμε δύο νέους κόμβους, τους οποίους θα ονομάσουμε <span class="arithmatex">\(u_i\)</span> και <span class="arithmatex">\(v_i\)</span>. Θα ενώσουμε όλους τους κόμβους στο εύρος <span class="arithmatex">\([Ls_i, Rs_i]\)</span> με τον <span class="arithmatex">\(u_i\)</span>, και τον <span class="arithmatex">\(v_i\)</span> με όλους τους κόμβους στο εύρος <span class="arithmatex">\([Lf_i, Rf_i]\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Παράδειγμα</p>
+<p>Για παράδειγμα, για την γραμμή <code>1 3 7 9 8</code> που εμφανίζεται στο παράδειγμα στην εκφώνηση, θα έχουμε τον ακόλουθο γράφο:
+<pre class="mermaid"><code>graph LR
+    g1[1 2 3] --&gt;|8| g2[7 8 9]
+</code></pre></p>
+<pre class="mermaid"><code>
+graph LR
+    1 --&gt;|2| u
+    2 --&gt;|1| u
+    3 --&gt;|0| u
+
+    u --&gt;|8| v
+
+    v --&gt;|0| 7
+    v --&gt;|1| 8
+    v --&gt;|2| 9</code></pre>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Σημείωση</p>
+<p>Σημειώστε τι πρέπει να γίνει με το βάρος της κάθε ακμής. Το βάρος της ακμής <span class="arithmatex">\(u_i \rightarrow v_i\)</span> θα έχει βάρος <span class="arithmatex">\(C_i\)</span>, ενώ οι ακμές <span class="arithmatex">\(x \rightarrow u_i\)</span> θα έχουν διαφορετικό βάρος για κάθε ακμή, όπως φαίνεται στο παράδειγμα πιο πάνω (ξεκινώντας από το 0 και να αυξάνονται για κάθε κόμβο πιο μακριά από το <span class="arithmatex">\(Rs_i\)</span> ή το <span class="arithmatex">\(Lf_i\)</span>.</p>
+</div>
+<p>Είναι αρκετά γρήγορο αυτό; Με αυτή την λύση, θα έχουμε <span class="arithmatex">\(V=N+2M = O(N+M)\)</span> κόμβους στον γράφο μας, και <span class="arithmatex">\(E=M(2 \cdot \frac{N}{2}) = O(NM)\)</span>. Δηλαδή, ο αλγόριθμος του Dijkstra θα τρέχει σε <span class="arithmatex">\(O(NM\log(N+M))\)</span>, το οποίο είναι αρκετό για το συγκεκριμένο subtask.</p>
+<h4 id="solution-2">Solution 2</h4>
+<p>Όπως και στην προηγούμενη λύση, θα προσπαθήσουμε να "ανταλλάξουμε" ακμές για κόμβους, για να μειώσουμε την συνολική μας πολυπλοκότητα.</p>
+<p>Για να το πετύχουμε αυτό, θα πρέπει να θυμηθούμε κάτι που είναι αρκετά απλό, αλλά πολλές φορές δύσκολο να το σκεφτούμε: το γεγονός ότι <span class="arithmatex">\(N = \sqrt{N} \times \sqrt{N}\)</span>. Μπορούμε να χρησιμοποιήσουμε την τεχνική του square root decomposition για να πετύχουμε καλύτερη πολυπλοκότητα.</p>
+<p>Συγκεκριμένα, θα χωρίσουμε τους κόμβους μας σε ομάδες μεγέθους <span class="arithmatex">\(\sqrt{N}\)</span>. Για κάθε ομάδα, θα δημιουργήσουμε 2 νέους κόμβους, τον <span class="arithmatex">\(S_i\)</span> και τον <span class="arithmatex">\(T_i\)</span>. Ο κάθε κόμβος ανήκει ακριβώς σε κάθε ομάδα, και για κάθε κόμβο <span class="arithmatex">\(K\)</span> που ανήκει στην <span class="arithmatex">\(i\)</span>-οστή ομάδα, θα προσθέσουμε 2 ακμές: μια από τον κόμβο <span class="arithmatex">\(K\)</span> στον κόμβο <span class="arithmatex">\(S_i\)</span> και μία από τον κόμβο <span class="arithmatex">\(T_i\)</span> στον κόμβο <span class="arithmatex">\(K\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Παράδειγμα</p>
+<p>Για παράδειγμα, για έναν γράφο με 9 κόμβους, θα έχουμε τον ακόλουθο γράφο πριν να προσθέσουμε οποιαδήποτε γραμμή:
+<pre class="mermaid"><code>
+graph TD
+    1 --&gt;|2| S1
+    2 --&gt;|1| S1
+    3 --&gt;|0| S1
+
+    4 --&gt;|2| S2
+    5 --&gt;|1| S2
+    6 --&gt;|0| S2
+
+    7 --&gt;|2| S3
+    8 --&gt;|1| S3
+    9 --&gt;|0| S3
+
+    T1 --&gt;|0| 1
+    T1 --&gt;|1| 2
+    T1 --&gt;|2| 3
+
+    T2 --&gt;|0| 4
+    T2 --&gt;|1| 5
+    T2 --&gt;|2| 6
+
+    T3 --&gt;|0| 7
+    T3 --&gt;|1| 8
+    T3 --&gt;|2| 9
+</code></pre></p>
+<p>Αν θέλουμε να προσθέσουμε την γραμμή <code>2 7 8 9 5</code>, θα προσθέσουμε τις ακόλουθες ακμές στον γράφο μας:</p>
+<pre class="mermaid"><code>graph LR
+    g1[2 3 4 5 6 7] --&gt;|5| g2[8 9]
+</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>2  8 10
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2  9 11
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>S1 8 6
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>S1 9 7
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>7  8 5
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>7  9 6
+</code></pre></div>
+</div>
+<p>Με αυτό τον τρόπο, το κάθε εύρος σταθμών θα αντιπροσωπεύεται από το πολύ <span class="arithmatex">\(O(\sqrt{N})\)</span> κόμβους και ακμές. Συνεχίζουμε όμως να πρέπει να ενώσουμε τους κόμβους του outgoing εύρους με τους κόμβους του incoming σταθμού. 
+Άρα συνολικά, θα έχουμε <span class="arithmatex">\(V=N+2\sqrt{N} = O(N)\)</span> κόμβους και <span class="arithmatex">\(E=M \cdot \sqrt{N} \cdot \sqrt{N/2}=O(NM)\)</span> ακμές. Έτσι, η συνολική μας πολυπλοκότητα κατέβηκε στο <span class="arithmatex">\(O(NM\log N)\)</span></p>
+<h3 id="subtask-4-24-points">Subtask 4 (24 points)</h3>
+<p>Για να λύσουμε το 4ο subtask, πρέπει να συνδυάσουμε τις ιδέες από τις 2 λύσεις που αναφέραμε στο subtask 3. Δηλαδή, θα πρέπει να χωρίσουμε τους κόμβους σε ομάδες, και για κάθε γραμμή, θα πρέπει να δημιουργούμε κόμβους, οι οποίοι θα ενώνουν <span class="arithmatex">\(O(\sqrt{N})\)</span> κόμβους ο κάθε ένας.</p>
+<p>Έτσι, συνολικά θα έχουμε <span class="arithmatex">\(V=N+2M+2\sqrt{N} = O(N+M)\)</span> κόμβους, και <span class="arithmatex">\(E=6Msqrt{N}=O(M\sqrt{N})\)</span>. Άρα η συνολική πολυπλοκότητα είναι <span class="arithmatex">\(O(M\sqrt{N}\log (N+M))\)</span></p>
+<h3 id="subtask-5-16-points">Subtask 5 (16 points)</h3>
+<p>Για τους τελευταίους πόντους του προβλήματος, χρειάζεται να επεκτείνουμε το square root decomposition σε κάτι ακόμη πιο γρήγορο. Το μέγεθος του <span class="arithmatex">\(N\)</span> μας παροτρείνει να ψάξουμε για κάτι λογαριθμικό, αλλά μπορούμε να χρησιμοποιήσουμε παρόμοιες ιδέες με το square root decomposition.</p>
+<p>Το square root decomposition που χρησιμοποιήσαμε στο προηγούμενο subtask είναι μια τεχνική που συνήθως χρησιμοποιείται για προβλήματα με range queries. Μήπως μπορούμε να χρησιμοποιήσουμε και άλλες τεχνικές που χρησιμοποιούμε για range queries (π.χ. τα segment trees);</p>
+<p>Μπορούμε να δημιουργήσουμε 2 segment trees, ένα από τους κόμβους προς τα έξω, και ακόμη ένα προς τους κόμβους, όπως πιο κάτω:</p>
+<p><img alt="graph" src="https://cdn.discordapp.com/attachments/683957969855315983/1102511000391004201/image.png" /></p>
+<p>Οι κόμβοι στην μέση του γράφου είναι οι σταθμοί του τρένου, με τον σταθμό 1 στα αριστερά και τον σταθμό <span class="arithmatex">\(N\)</span> στα δεξιά. Για να αντιπροσωπέυσουμε ένα εύρος από σταθμούς, χρειαζόμαστε το πολύ <span class="arithmatex">\(O(\log N)\)</span> ξεχωριστούς κόμβους, για τους ίδιους λόγους που ισχύει η συγκεκριμένη ιδιότητα στα segment trees.</p>
+<p>Με αυτό τον γράφο, έχουμε συνολικά <span class="arithmatex">\(V=O(N+M)\)</span> κόμβους και <span class="arithmatex">\(Ε=Ο(N+M\log N)\)</span> ακμές, άρα η συνολική πολυπλοκότητα είναι <span class="arithmatex">\(O((N+M\log N)\log(N+M)) = O((N+M)\log^2 (N+M))\)</span></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "tags": {"Dynamic Programming": "dp", "Geometry": "geometry", "Graphs": "graphs", "Interactive Problems": "interactive", "Mathematics": "maths", "SQRT Decomposition": "sqrt", "Segment Trees": "seg"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../../../javascripts/author.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
