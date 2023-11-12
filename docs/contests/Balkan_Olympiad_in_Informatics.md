@@ -3,7 +3,7 @@
 Για τις Βαλκανιάδες, δυστυχώς τα προβλήματα από παλιούς διαγωνισμούς είναι δυσεύρετα. Συγκεντρώσαμε τους ακόλουθους συνδέσμους με προβλήματα από μερικά χρόνια:
 
 - 2023: [Submit](https://basecamp.eolymp.com/en/contests?series=balkoi)
-- 2022: [Task Statements](./images/boi19_tasks.pdf)
+- 2022: [Task Statements](./images/boi22_tasks.pdf)
 - 2021: [Submit](https://shumen-21-s.eolymp.io/)
 - 2020: Competition Cancelled
 - 2019: [Submit (only 4 problems)](https://michanicos.cmscoinformatics.org/#/tasks/1?tag=BOI2019)
