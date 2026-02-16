@@ -2150,8 +2150,8 @@ Author: ALeonidou
 <p>Constraints: <span class="arithmatex">\(N \leq 10^5\)</span>, <span class="arithmatex">\(M \leq 10^5\)</span>, <span class="arithmatex">\(K = 1\)</span></p>
 <h3 id="solution_4">Solution</h3>
 <p>Dual prefix sums. Precompute a prefix sum array for the alternating sum of the layers starting with <span class="arithmatex">\(+\)</span>, and another prefix sum array for the alternating sum of the layers starting with <span class="arithmatex">\(-\)</span>. Use the two prefix sums accordingly to directly compute the alternating sum of <code>Layer[L..R]</code> in <span class="arithmatex">\(O(1)\)</span>. This way we can calculate each output matrix and its error in <span class="arithmatex">\(O(1)\)</span>.</p>
-<p><strong>Time Complexity:</strong> <span class="arithmatex">\(O(N + M)\)</span>
-<strong>Space Complexity:</strong> <span class="arithmatex">\(O(N + M)\)</span></p>
+<p><strong>Time Complexity:</strong> <span class="arithmatex">\(O(N + M)\)</span></p>
+<p><strong>Space Complexity:</strong> <span class="arithmatex">\(O(N + M)\)</span></p>
 <h3 id="sample-algorithm_2">Sample Algorithm</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">prefix</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">Layer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">prefix</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">Layer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -2193,43 +2193,43 @@ Author: ALeonidou
 <tr>
 <td>1</td>
 <td>Direct Computation</td>
-<td>O(M)</td>
-<td>O(M)</td>
+<td><span class="arithmatex">\(O(M)\)</span></td>
+<td><span class="arithmatex">\(O(M)\)</span></td>
 <td>5</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Direct Computation</td>
-<td>O(K^2)</td>
-<td>O(K^2)</td>
+<td><span class="arithmatex">\(O(K^2)\)</span></td>
+<td><span class="arithmatex">\(O(K^2)\)</span></td>
 <td>5</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Brute Force</td>
-<td>O(N\timesM\timesK^2)</td>
-<td>O((N+M)\timesK^2)</td>
+<td><span class="arithmatex">\(O(N\times M\times K^2)\)</span></td>
+<td><span class="arithmatex">\(O((N+M)\times K^2)\)</span></td>
 <td>25</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Sort + Cumulative Sum <strong>or</strong> Prefix Sums</td>
-<td>O(Nlog(N) + M) <strong>or</strong> O(N + M)</td>
-<td>O(N+M)</td>
+<td><span class="arithmatex">\(O(Nlog(N) + M)\)</span> <strong>or</strong> <span class="arithmatex">\(O(N + M)\)</span></td>
+<td><span class="arithmatex">\(O(N+M)\)</span></td>
 <td>20</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Dual Prefix Sums</td>
 <td>O(N+M)</td>
-<td>O(N+M)</td>
+<td><span class="arithmatex">\(O(N+M)\)</span></td>
 <td>30</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Parallel Dual Prefix Sums</td>
-<td>O((N+M)\timesK^2)</td>
-<td>O((N+M)\timesK^2)</td>
+<td><span class="arithmatex">\(O((N+M)\times K^2)\)</span></td>
+<td><span class="arithmatex">\(O((N+M)\times K^2)\)</span></td>
 <td>15</td>
 </tr>
 </tbody>
