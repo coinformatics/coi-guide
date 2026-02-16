@@ -104,6 +104,7 @@ Constraints: $N \leq 10^5$, $M \leq 10^5$, $K = 1$
 Dual prefix sums. Precompute a prefix sum array for the alternating sum of the layers starting with $+$, and another prefix sum array for the alternating sum of the layers starting with $-$. Use the two prefix sums accordingly to directly compute the alternating sum of `Layer[L..R]` in $O(1)$. This way we can calculate each output matrix and its error in $O(1)$.
 
 **Time Complexity:** $O(N + M)$
+
 **Space Complexity:** $O(N + M)$
 
 ### Sample Algorithm
@@ -144,9 +145,9 @@ Parallel Dual Prefix Sums. Extend the prefix sum technique from *Subtask 5*, for
 
 | Subtask | Technique | Time Complexity | Space Complexity | Points |
 |-|-|-|-|-|
-| 1 | Direct Computation | O(M) | O(M) | 5 |
-| 2 | Direct Computation | O(K^2) | O(K^2) | 5 |
-| 3 | Brute Force | O(N\timesM\timesK^2) | O((N+M)\timesK^2) | 25 |
-| 4 | Sort + Cumulative Sum **or** Prefix Sums | O(Nlog(N) + M) **or** O(N + M)  | O(N+M) | 20 |
-| 5 | Dual Prefix Sums | O(N+M) | O(N+M) | 30 |
-| 6 | Parallel Dual Prefix Sums | O((N+M)\timesK^2) | O((N+M)\timesK^2) | 15 |
+| 1 | Direct Computation | $O(M)$ | $O(M)$ | 5 |
+| 2 | Direct Computation | $O(K^2)$ | $O(K^2)$ | 5 |
+| 3 | Brute Force | $O(N\times M\times K^2)$ | $O((N+M)\times K^2)$ | 25 |
+| 4 | Sort + Cumulative Sum **or** Prefix Sums | $O(Nlog(N) + M)$ **or** $O(N + M)$  | $O(N+M)$ | 20 |
+| 5 | Dual Prefix Sums | O(N+M) | $O(N+M)$ | 30 |
+| 6 | Parallel Dual Prefix Sums | $O((N+M)\times K^2)$ | $O((N+M)\times K^2)$ | 15 |
