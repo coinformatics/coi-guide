@@ -9,6 +9,10 @@ tags:
 Author: ALeonidou
 </span>
 
+## Problem
+
+[Source](https://michanicos.cmscoinformatics.org/problems/2026-A/gpt7)
+
 ## Subtask 1 (5 points)
 Constraints: $N = 1$, $M \leq 100$, $K = 1$
 
@@ -149,5 +153,5 @@ Parallel Dual Prefix Sums. Extend the prefix sum technique from *Subtask 5*, for
 | 2 | Direct Computation | $O(K^2)$ | $O(K^2)$ | 5 |
 | 3 | Brute Force | $O(N\times M\times K^2)$ | $O((N+M)\times K^2)$ | 25 |
 | 4 | Sort + Cumulative Sum **or** Prefix Sums | $O(Nlog(N) + M)$ **or** $O(N + M)$  | $O(N+M)$ | 20 |
-| 5 | Dual Prefix Sums | O(N+M) | $O(N+M)$ | 30 |
+| 5 | Dual Prefix Sums | $O(N+M)$ | $O(N+M)$ | 30 |
 | 6 | Parallel Dual Prefix Sums | $O((N+M)\times K^2)$ | $O((N+M)\times K^2)$ | 15 |
